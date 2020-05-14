@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioEngineer.cpp" />
+    <ClCompile Include="src\application.cpp" />
+    <ClCompile Include="src\core\data\spectrogram.cpp" />
+    <ClCompile Include="src\core\data\spectrum.cpp" />
+    <ClCompile Include="src\core\data\waveform.cpp" />
+    <ClCompile Include="src\core\deeplearning\joint.cpp" />
+    <ClCompile Include="src\core\deeplearning\layer.cpp" />
+    <ClCompile Include="src\core\deeplearning\networktrainer.cpp" />
+    <ClCompile Include="src\core\deeplearning\neuralnetwork.cpp" />
+    <ClCompile Include="src\utils\rand.cpp" />
+    <ClCompile Include="src\core\deeplearning\trainingfield.cpp" />
+    <ClCompile Include="src\core\portaudiowrapper.cpp" />
+    <ClCompile Include="src\core\processing\fourier.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_10.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_2.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_3.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_4.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_5.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_7.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_8.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\fft_odd.cpp" />
+    <ClCompile Include="src\core\processing\mixfft\Mixfft.cpp" />
+    <ClCompile Include="src\core\streams\inputstream.cpp" />
+    <ClCompile Include="src\core\streams\outputstream.cpp" />
+    <ClCompile Include="src\events\eventhandler.cpp" />
+    <ClCompile Include="src\graphics\data\arraybuffer.cpp" />
+    <ClCompile Include="src\graphics\data\framebuffer.cpp" />
+    <ClCompile Include="src\graphics\data\indexbuffer.cpp" />
+    <ClCompile Include="src\graphics\data\vertexarray.cpp" />
+    <ClCompile Include="src\graphics\gui\button.cpp" />
+    <ClCompile Include="src\graphics\gui\component.cpp" />
+    <ClCompile Include="src\graphics\gui\panel.cpp" />
+    <ClCompile Include="src\graphics\gui\scene.cpp" />
+    <ClCompile Include="src\graphics\gui\tbuttongroup.cpp" />
+    <ClCompile Include="src\graphics\gui\togglebutton.cpp" />
+    <ClCompile Include="src\graphics\renderables\model.cpp" />
+    <ClCompile Include="src\graphics\renderables\texture.cpp" />
+    <ClCompile Include="src\graphics\renderers\graphrenderer.cpp" />
+    <ClCompile Include="src\graphics\renderers\guirenderer.cpp" />
+    <ClCompile Include="src\graphics\shaders\gramshader.cpp" />
+    <ClCompile Include="src\graphics\shaders\graphshader.cpp" />
+    <ClCompile Include="src\graphics\shaders\guishader.cpp" />
+    <ClCompile Include="src\graphics\shaders\shader.cpp" />
+    <ClCompile Include="src\graphics\window.cpp" />
+    <ClCompile Include="src\maths\mat2.cpp" />
+    <ClCompile Include="src\maths\mat3.cpp" />
+    <ClCompile Include="src\maths\mat4.cpp" />
+    <ClCompile Include="src\maths\maths.cpp" />
+    <ClCompile Include="src\maths\vec2.cpp" />
+    <ClCompile Include="src\maths\vec3.cpp" />
+    <ClCompile Include="src\maths\vec4.cpp" />
+    <ClCompile Include="src\utils\fileutils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\application.h" />
+    <ClInclude Include="src\core\data\spectrogram.h" />
+    <ClInclude Include="src\core\data\spectrum.h" />
+    <ClInclude Include="src\core\data\waveform.h" />
+    <ClInclude Include="src\core\deeplearning\joint.h" />
+    <ClInclude Include="src\core\deeplearning\layer.h" />
+    <ClInclude Include="src\core\deeplearning\networktrainer.h" />
+    <ClInclude Include="src\core\deeplearning\neuralnetwork.h" />
+    <ClInclude Include="src\defines.h" />
+    <ClInclude Include="src\utils\rand.h" />
+    <ClInclude Include="src\core\deeplearning\trainingfield.h" />
+    <ClInclude Include="src\core\portaudiowrapper.h" />
+    <ClInclude Include="src\core\processing\fourier.h" />
+    <ClInclude Include="src\core\processing\mixfft\mixfft.h" />
+    <ClInclude Include="src\core\processing\mixfft\smallfft.h" />
+    <ClInclude Include="src\core\streams\inputstream.h" />
+    <ClInclude Include="src\core\streams\outputstream.h" />
+    <ClInclude Include="src\events\audioevent.h" />
+    <ClInclude Include="src\events\errorevent.h" />
+    <ClInclude Include="src\events\event.h" />
+    <ClInclude Include="src\events\eventhandler.h" />
+    <ClInclude Include="src\events\eventlistener.h" />
+    <ClInclude Include="src\events\eventlistenerbase.h" />
+    <ClInclude Include="src\events\eventlistenerstatic.h" />
+    <ClInclude Include="src\events\eventsystem.h" />
+    <ClInclude Include="src\events\guievent.h" />
+    <ClInclude Include="src\events\keyboardevent.h" />
+    <ClInclude Include="src\events\messageevent.h" />
+    <ClInclude Include="src\events\mouseevent.h" />
+    <ClInclude Include="src\events\updateevent.h" />
+    <ClInclude Include="src\events\wincloseevent.h" />
+    <ClInclude Include="src\events\winresizeevent.h" />
+    <ClInclude Include="src\graphics\data\arraybuffer.h" />
+    <ClInclude Include="src\graphics\data\framebuffer.h" />
+    <ClInclude Include="src\graphics\data\indexbuffer.h" />
+    <ClInclude Include="src\graphics\data\vertexarray.h" />
+    <ClInclude Include="src\graphics\gui\button.h" />
+    <ClInclude Include="src\graphics\gui\component.h" />
+    <ClInclude Include="src\graphics\gui\gui.h" />
+    <ClInclude Include="src\graphics\gui\panel.h" />
+    <ClInclude Include="src\graphics\gui\scene.h" />
+    <ClInclude Include="src\graphics\gui\tbuttongroup.h" />
+    <ClInclude Include="src\graphics\gui\togglebutton.h" />
+    <ClInclude Include="src\graphics\renderables\model.h" />
+    <ClInclude Include="src\graphics\renderables\text.h" />
+    <ClInclude Include="src\graphics\renderables\texture.h" />
+    <ClInclude Include="src\graphics\renderers\graphrenderer.h" />
+    <ClInclude Include="src\graphics\renderers\guirenderer.h" />
+    <ClInclude Include="src\graphics\shaders\gramshader.h" />
+    <ClInclude Include="src\graphics\shaders\graphshader.h" />
+    <ClInclude Include="src\graphics\shaders\guishader.h" />
+    <ClInclude Include="src\graphics\shaders\shader.h" />
+    <ClInclude Include="src\graphics\window.h" />
+    <ClInclude Include="src\maths\mat2.h" />
+    <ClInclude Include="src\maths\mat3.h" />
+    <ClInclude Include="src\maths\mat4.h" />
+    <ClInclude Include="src\maths\maths.h" />
+    <ClInclude Include="src\maths\vec2.h" />
+    <ClInclude Include="src\maths\vec3.h" />
+    <ClInclude Include="src\maths\vec4.h" />
+    <ClInclude Include="src\utils\fileutils.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{05A6094B-F926-41EF-B514-A47476342A4D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AudioEngineer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencies\Freetype\include;$(SolutionDir)Dependencies\FreeImage\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\PortAudio\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\Freetype\lib;$(SolutionDir)Dependencies\FreeImage\lib;$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\GLFW\lib;$(SolutionDir)Dependencies\PortAudio\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencies\Freetype\include;$(SolutionDir)Dependencies\FreeImage\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\PortAudio\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\Freetype\lib;$(SolutionDir)Dependencies\FreeImage\lib;$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\GLFW\lib;$(SolutionDir)Dependencies\PortAudio\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencies\Freetype\include;$(SolutionDir)Dependencies\FreeImage\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\PortAudio\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\Freetype\lib;$(SolutionDir)Dependencies\FreeImage\lib;$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\GLFW\lib;$(SolutionDir)Dependencies\PortAudio\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencies\Freetype\include;$(SolutionDir)Dependencies\FreeImage\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\PortAudio\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\Freetype\lib;$(SolutionDir)Dependencies\FreeImage\lib;$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\GLFW\lib;$(SolutionDir)Dependencies\PortAudio\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FreeImage.lib;glew32s.lib;glfw3.lib;opengl32.lib;portaudio_x86.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FreeImage.lib;glew32s.lib;glfw3.lib;opengl32.lib;portaudio_x86.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FreeImage.lib;glew32s.lib;glfw3.lib;opengl32.lib;portaudio_x86.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FreeImage.lib;glew32s.lib;glfw3.lib;opengl32.lib;portaudio_x86.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
